@@ -52,7 +52,6 @@ const exportAnnotationFromPDF = async (xoppPath, filePath, savePath) => {
     const mrbByPage = RtreeCluster.mrbFinder(rtreeByPage);
     // -------------40-rtree-cluster-------------
 
-
     // -------------50-image-clipper-------------
     // 将有批注的页面转换为图片
     const imageByPage = await ImageClipper.getImageOfStrokedPages(mrbByPage, pdfFile, pdfWidth, pdfHeight);
@@ -68,7 +67,7 @@ const exportAnnotationFromPDF = async (xoppPath, filePath, savePath) => {
 }
 
 exportAnnotationFromPDF(
-    '/home/lurenjiasworld/Downloads/R树 - 维基百科，自由的百科全书.xopp',
-    '/home/lurenjiasworld/Downloads/R树 - 维基百科，自由的百科全书_xournal_exported.pdf',
+    './demo/import/R树 - 维基百科，自由的百科全书.xopp',
+    './demo/import/R树 - 维基百科，自由的百科全书_xournal_exported.pdf',
     './export',
 );
