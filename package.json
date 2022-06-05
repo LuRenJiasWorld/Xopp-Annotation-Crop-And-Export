@@ -1,0 +1,23 @@
+{
+  "name": "pdf-annotation-crop-and-export",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node ./src/index.js",
+    "cleanstart": "rm -rf ./export/* && npm run start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "LuRenJiasWorld<loli@lurenjia.in>",
+  "license": "MIT",
+  "dependencies": {
+    "fast-xml-parser": "^4.0.8",
+    "pdf2pic": "^2.1.4",
+    "rbush": "^3.0.1",
+    "sharp": "^0.30.6"
+  },
+  "devDependencies": {
+    "@types/sharp": "^0.30.2"
+  }
+}
