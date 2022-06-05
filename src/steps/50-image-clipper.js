@@ -4,6 +4,7 @@ import Pdf2Pic from 'pdf2pic'
 import { SCALE_FACTOR_EXPORT } from '../constant.js';
 import { getNestedRect } from '../utils.js'; 
 
+
 export const getImageOfStrokedPages = async (mrbByPage, pdfFile, pdfWidth, pdfHeight) => {
     const imageByPage = new Array(mrbByPage.length);
     for (let idx = 0; idx < mrbByPage.length; idx++) {

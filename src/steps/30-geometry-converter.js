@@ -1,5 +1,6 @@
 import { CLUSTER_FIND_AREA } from '../constant.js';
 
+
 export const strokeToGeometry = (strokeByPage) => {
     const geometryByPage = new Array(strokeByPage.length);
     strokeByPage.forEach((strokeInPage, idx) => {
